@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Kit Natal na Sala — material de Natal pronto para professoras</title>
+<meta name="description" content="Painel de porta, cartões, tags, 10 atividades, certificados e muito mais. Tudo pronto para imprimir.">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--red:#D7263D;--green:#1B7F5B;--gold:#F2B33D;--cream:#FFF6E9;--ink:#2B2B2B;--muted:#5d5d5d}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Nunito,system-ui,sans-serif;color:var(--ink);background:#fff;line-height:1.5}
+.wrap{max-width:980px;margin:0 auto;padding:0 18px}
+h1,h2,h3,.f{font-family:Fredoka,sans-serif}
+.top{background:var(--green);color:#fff;text-align:center;font-weight:800;font-size:14px;padding:9px 12px}
+.hero{background:var(--red);color:#fff;padding:34px 0 40px;text-align:center}
+.hero .eyebrow{font:600 15px Fredoka;letter-spacing:2px;opacity:.95}
+.hero h1{font-size:clamp(32px,7vw,54px);line-height:1.08;margin:10px auto 14px;max-width:780px}
+.hero p{font-size:clamp(17px,3.6vw,20px);max-width:640px;margin:0 auto}
+.hero img{width:100%;height:auto;max-width:560px;border-radius:18px;margin:24px auto 0;display:block;box-shadow:0 18px 40px rgba(0,0,0,.25)}
+.btn{display:inline-block;background:var(--gold);color:var(--ink);font:700 20px Fredoka;text-decoration:none;padding:17px 30px;border-radius:60px;box-shadow:0 6px 0 #c98d1f;margin-top:24px;transition:transform .1s}
+.btn:active{transform:translateY(3px);box-shadow:0 3px 0 #c98d1f}
+.btn.green{background:var(--green);color:#fff;box-shadow:0 6px 0 #10583e}
+.small{font-size:14px;opacity:.9;margin-top:12px}
+section{padding:46px 0}
+.title{font-size:clamp(26px,5vw,36px);text-align:center;line-height:1.15;margin-bottom:10px}
+.lead{text-align:center;color:var(--muted);font-size:18px;max-width:640px;margin:0 auto 28px}
+.pain{background:var(--cream)}
+.pain ul{list-style:none;max-width:620px;margin:0 auto;display:grid;gap:12px}
+.pain li{background:#fff;border-radius:14px;padding:14px 18px;font-weight:700;font-size:17px;border-left:6px solid var(--red)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:18px}
+.item{background:#fff;border:2px solid #eee;border-radius:16px;overflow:hidden}
+.item img{width:100%;display:block;aspect-ratio:210/297;object-fit:cover;object-position:top;border-bottom:2px solid #eee}
+.item.land img{aspect-ratio:297/210}
+.item div{padding:12px 14px}
+.item b{font:600 17px Fredoka;display:block}
+.item span{font-size:14px;color:var(--muted)}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+.step{background:var(--cream);border-radius:16px;padding:20px}
+.step .n{width:40px;height:40px;border-radius:50%;background:var(--green);color:#fff;font:700 20px Fredoka;display:flex;align-items:center;justify-content:center;margin-bottom:10px}
+.step b{font:600 19px Fredoka}
+.offers{background:var(--green);color:#fff}
+.offers .title{color:#fff}
+.plans{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;align-items:start;max-width:820px;margin:0 auto}
+.plan{background:#fff;color:var(--ink);border-radius:20px;padding:26px 22px;text-align:center;position:relative}
+.plan.best{border:4px solid var(--gold);transform:scale(1.02)}
+.plan .tag{position:absolute;top:-16px;left:50%;transform:translateX(-50%);background:var(--gold);font:700 14px Fredoka;padding:6px 16px;border-radius:30px;white-space:nowrap}
+.plan h3{font-size:24px}
+.plan .old{text-decoration:line-through;color:#999;margin-top:6px}
+.plan .price{font:700 52px Fredoka;color:var(--red);line-height:1.1}
+.plan .price small{font-size:22px}
+.plan ul{text-align:left;list-style:none;margin:16px 0 4px;display:grid;gap:7px;font-size:15.5px}
+.plan li::before{content:"✓ ";color:var(--green);font-weight:900}
+.plan li.no{color:#aaa}
+.plan li.no::before{content:"✗ ";color:#ccc}
+.plan .btn{width:100%;margin-top:18px}
+.guarantee{display:flex;gap:20px;align-items:center;max-width:720px;margin:0 auto;background:var(--cream);border-radius:20px;padding:24px}
+.seal{flex:none;width:96px;height:96px;border-radius:50%;background:var(--gold);display:flex;flex-direction:column;align-items:center;justify-content:center;font:700 30px/1 Fredoka}
+.seal small{font-size:13px}
+.faq{max-width:720px;margin:0 auto}
+details{border-bottom:1px solid #eee;padding:16px 4px}
+summary{font:600 18px Fredoka;cursor:pointer;list-style:none}
+summary::after{content:"+";float:right;color:var(--red)}
+details[open] summary::after{content:"–"}
+details p{margin-top:8px;color:var(--muted)}
+footer{background:#222;color:#bbb;text-align:center;font-size:13px;padding:26px 18px}
+@media (max-width:600px){.guarantee{flex-direction:column;text-align:center}.plan.best{transform:none}}
+</style>
+</head>
+<body>
+<div class="top">🎄 Material de Natal para professoras • Acesso imediato após a compra</div>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="eyebrow">KIT DA PROFESSORA</div>
+    <h1>O Natal da sua turma pronto em 1 tarde — é só imprimir</h1>
+    <p>Painel de porta, cartões, tags de lembrancinha, 10 atividades, porta-retratos, certificados e bilhetes para as famílias. Tudo em PDF, com versões coloridas e para colorir.</p>
+    <img src="img/hero.jpg" alt="Prévia das páginas do Kit Natal na Sala" width="1080" height="1080">
+    <a class="btn" href="#oferta">Quero o kit de Natal</a>
+    <div class="small">Pix, cartão ou boleto • Garantia de 7 dias</div>
+  </div>
+</header>
+
+<section class="pain">
+  <div class="wrap">
+    <h2 class="title">Dezembro chegou e a lista não acaba?</h2>
+    <p class="lead">Fechamento de notas, festa, lembrancinha, decoração da sala, recado para as famílias… e ainda montar atividades novas.</p>
+    <ul>
+      <li>Horas no Pinterest procurando molde que imprima direito</li>
+      <li>Atividade bonita, mas que gasta toda a tinta da impressora</li>
+      <li>Tirar do próprio bolso para comprar painel e lembrancinha pronta</li>
+      <li>Escrever bilhete por bilhete, cartão por cartão</li>
+    </ul>
+    <p class="lead" style="margin-top:26px;margin-bottom:0"><b>O Kit Natal na Sala resolve tudo isso de uma vez.</b></p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2 class="title">O que vem no kit</h2>
+    <p class="lead">50 páginas em A4, prontas para imprimir quantas vezes quiser.</p>
+    <div class="grid">
+      <div class="item"><img src="img/bandeirola.jpg" alt="Bandeirola do painel FELIZ NATAL" loading="lazy"><div><b>Painel de porta “FELIZ NATAL”</b><span>Bandeirolas grandes, uma por folha.</span></div></div>
+      <div class="item"><img src="img/cartoes.jpg" alt="Cartões de Natal" loading="lazy"><div><b>8 cartões para os alunos</b><span>Mensagens carinhosas, 4 por folha.</span></div></div>
+      <div class="item"><img src="img/tags.jpg" alt="Tags de lembrancinha" loading="lazy"><div><b>36 tags de lembrancinha</b><span>Para saquinhos, potes e mimos.</span></div></div>
+      <div class="item"><img src="img/caca.jpg" alt="Caça-palavras de Natal" loading="lazy"><div><b>10 atividades + gabarito</b><span>Pintura, labirinto, caça-palavras, matemática e mais.</span></div></div>
+      <div class="item"><img src="img/matematica.jpg" alt="Matemática da árvore" loading="lazy"><div><b>Atividades que ensinam</b><span>Contagem, adição, escrita e sequência lógica.</span></div></div>
+      <div class="item"><img src="img/moldura.jpg" alt="Porta-retrato Meu Natal 2026" loading="lazy"><div><b>Porta-retratos “Meu Natal 2026”</b><span>Lembrança linda para as famílias. <em>Completo</em></span></div></div>
+      <div class="item"><img src="img/bolinhas.jpg" alt="Bolinhas da árvore coletiva" loading="lazy"><div><b>Árvore de Natal coletiva</b><span>Cada aluno escreve o nome na sua bolinha. <em>Completo</em></span></div></div>
+      <div class="item"><img src="img/carta.jpg" alt="Carta de despedida" loading="lazy"><div><b>Carta de despedida da turma</b><span>Versões Infantil e Fundamental. <em>Completo</em></span></div></div>
+      <div class="item land"><img src="img/certificado.jpg" alt="Certificado de conclusão" loading="lazy"><div><b>3 certificados de fim de ano</b><span>Conclusão, Ajudante do Natal e Destaque. <em>Completo</em></span></div></div>
+    </div>
+    <p class="lead" style="margin-top:22px">E ainda: 4 bilhetes prontos para as famílias e 10 mensagens para o grupo do WhatsApp (no Completo).</p>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <h2 class="title">Como funciona</h2>
+    <div class="steps" style="margin-top:20px">
+      <div class="step"><div class="n">1</div><b>Garanta o kit</b><p>Pague com Pix, cartão ou boleto.</p></div>
+      <div class="step"><div class="n">2</div><b>Receba na hora</b><p>O acesso chega no seu e-mail logo após a confirmação.</p></div>
+      <div class="step"><div class="n">3</div><b>Imprima e use</b><p>Colorido ou preto e branco, em casa ou na escola.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="offers" id="oferta">
+  <div class="wrap">
+    <h2 class="title">Escolha o seu kit</h2>
+    <p class="lead" style="color:#e6f3ec">Pagamento único. Sem mensalidade.</p>
+    <div class="plans">
+      <div class="plan">
+        <h3>Kit Básico</h3>
+        <div class="price"><small>R$</small>9,90</div>
+        <ul>
+          <li>Painel de porta “FELIZ NATAL”</li>
+          <li>8 cartões para os alunos</li>
+          <li>36 tags de lembrancinha</li>
+          <li>10 atividades + gabarito</li>
+          <li class="no">Porta-retratos “Meu Natal 2026”</li>
+          <li class="no">Árvore de Natal coletiva</li>
+          <li class="no">Carta de despedida + bilhetes</li>
+          <li class="no">3 certificados de fim de ano</li>
+          <li class="no">10 mensagens prontas</li>
+        </ul>
+        <a class="btn green" href="https://pay.kiwify.com.br/Fb7pQDB">Quero o Básico</a>
+      </div>
+      <div class="plan best">
+        <div class="tag">⭐ MAIS ESCOLHIDO</div>
+        <h3>Kit Completo</h3>
+        <div class="old" style="text-decoration:none;color:var(--green);font-weight:800">o dobro de materiais por só R$ 10 a mais</div>
+        <div class="price"><small>R$</small>19,90</div>
+        <ul>
+          <li>Tudo do Kit Básico</li>
+          <li>Porta-retratos “Meu Natal 2026”</li>
+          <li>Árvore de Natal coletiva da turma</li>
+          <li>Carta de despedida (2 versões)</li>
+          <li>4 bilhetes para as famílias</li>
+          <li>3 certificados de fim de ano</li>
+          <li>10 mensagens prontas para enviar</li>
+        </ul>
+        <a class="btn" href="https://pay.kiwify.com.br/4lhgAP4">Quero o Completo</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="guarantee">
+      <div class="seal">7<small>DIAS</small></div>
+      <div><h3 class="f" style="font-size:22px">Garantia incondicional de 7 dias</h3><p>Se não gostar do material por qualquer motivo, é só pedir o reembolso dentro de 7 dias. Você recebe 100% do valor de volta, sem perguntas.</p></div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <h2 class="title">Dúvidas frequentes</h2>
+    <div class="faq">
+      <details><summary>Como recebo o material?</summary><p>Logo após a confirmação do pagamento, você recebe por e-mail o acesso para baixar os PDFs. No Pix e no cartão, é na hora.</p></details>
+      <details><summary>Preciso de impressora colorida?</summary><p>Não. Quase todos os materiais têm versão para colorir, que fica ótima em preto e branco — e as crianças adoram pintar.</p></details>
+      <details><summary>Serve para qual faixa etária?</summary><p>Educação Infantil e anos iniciais do Ensino Fundamental (aprox. 4 a 9 anos). As atividades vão de pintura e contagem até caça-palavras e adição.</p></details>
+      <details><summary>Posso imprimir mais de uma vez?</summary><p>Sim! Imprima quantas vezes quiser para as suas turmas. Só não é permitido revender ou compartilhar o arquivo.</p></details>
+      <details><summary>Dá para editar?</summary><p>Os arquivos são PDFs prontos para imprimir, com espaços para escrever o nome dos alunos, da turma e a sua assinatura.</p></details>
+      <details><summary>E se eu não gostar?</summary><p>Você tem 7 dias de garantia. É só pedir o reembolso e devolvemos 100% do valor.</p></details>
+    </div>
+    <div style="text-align:center"><a class="btn" href="#oferta">Quero meu kit de Natal</a></div>
+  </div>
+</section>
+
+<footer>Kit Natal na Sala © 2026 • Material digital para uso em sala de aula.<br>Este site não é afiliado ao Facebook nem à Meta.</footer>
+</body>
+</html>
